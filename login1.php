@@ -1,0 +1,24 @@
+<?php
+session_start();
+include_once("db_login.php");
+$a1=$_GET['t1'];
+$a2=$_GET['t2'];
+$res=mysqli_query($con , "select * from login_data where uid='$a1' and pwd='$a2'  ");
+$cnt=mysqli_num_rows($res);
+if($cnt==0)
+{
+	header("location:login.php?y=1");
+}
+else
+{
+	$_SESSION['uid']=$a1;
+	if($a1=='admin')
+	{
+		header("location:home.php");
+	}
+	else
+	{
+		header("location:home1.php");
+	}
+}
+?>

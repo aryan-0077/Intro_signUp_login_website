@@ -1,0 +1,9 @@
+Hello guys , This is to tell u that how to import and export database linked with this repository
+
+watch this 2 min video on youtube
+>>  https://www.youtube.com/watch?v=IPFfZYHbTyo
+
+>> How to Export and Import the Databases in MySql in XAMPP by Chantha Nav
+
+
+>> Recommended Size of screen is 110% for best View.
